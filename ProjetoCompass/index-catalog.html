@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Catálogo de Distribuições Linux</title>
+
+    <!-- Arquivos CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="css/tooplate-kool-form-pack.css" rel="stylesheet">
+
+    <style>
+        /* Estilo para o logo circular */
+        .header-logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* Cabeçalho transparente */
+        .site-header {
+            background-color: transparent;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        /* Seta animada */
+        .arrow-down {
+            position: absolute;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 5rem;
+            color: white;
+            animation: bounce 2s infinite;
+            cursor: pointer;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            40% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+            60% {
+                transform: translateX(-50%) translateY(-5px);
+            }
+        }
+
+        /* Estilo para descrições maiores */
+        .carousel-caption p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header text-white py-3">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6 d-flex align-items-center">
+                    <a class="site-header-text d-flex align-items-center text-decoration-none text-white" href="index.html">
+                        <img src="images/Logo - Cloud Computer PFL..png" alt="Logo da PFL Cloud Computer Ltda." class="header-logo me-2">
+                        <span class="fs-4">PFL Cloud Computer Ltda.</span>
+                    </a>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-end align-items-center">
+                    <ul class="social-icon list-unstyled d-flex mb-0 me-3">
+                        <li class="me-3">
+                            <a href="#" class="text-white text-decoration-none">
+                                <i class="bi-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="me-3">
+                            <a href="#" class="text-white text-decoration-none">
+                                <i class="bi-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white text-decoration-none">
+                                <i class="bi-whatsapp"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="bi-list text-white fs-3" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Vídeo de Fundo -->
+        <div class="video-wrap">
+            <video autoplay loop muted class="custom-video">
+                <source src="videos/video5.mp4" type="video/mp4">
+                Seu navegador não suporta este tipo de arquivo "MP4".
+            </video>
+        </div>
+
+        <!-- Nome da Empresa e Seta Interativa -->
+        <div class="hero-title text-center position-absolute top-50 start-50 translate-middle">
+            <h1 class="display-4 fw-bold text-white" style="margin-top: 0px">PFL Cloud Computer</h1>
+            <div class="arrow-down" onclick="document.getElementById('catalog-section').scrollIntoView({ behavior: 'smooth' });">
+                <i class="bi-arrow-down"></i>
+            </div>
+        </div>
+
+        <!-- Conteúdo Principal -->
+        <section id="catalog-section" class="py-5">
+            <div class="container">
+                <h1 class="text-center mb-4" style="margin-top: 100px">Distribuições Linux</h1>
+                <div id="linuxCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000" style="margin-top:320px">
+                    <div class="carousel-inner">
+                        <!-- Ubuntu -->
+                        <div class="carousel-item active">
+                            <a href="https://distrosea.com/pt/start/ubuntu-25.04-default/" target="_blank">
+                            <img src="images/ubuntu.png" class="d-block mx-auto distro-logo" alt="Ubuntu" style="margin-left: 100px">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="nome-distro">Ubuntu</h5>
+                                <p>Ubuntu é uma das distribuições Linux mais populares, conhecida por sua facilidade de uso, suporte da comunidade e ampla compatibilidade com softwares e hardware.</p>
+                            </a>
+                            </div>
+                        </div>
+                        <!-- Fedora -->
+                        <div class="carousel-item">
+                            <a href="https://distrosea.com/pt/start/fedora-42-cinnamon/" target="_blank">
+                                <img src="https://img.icons8.com/fluency/96/fedora.png" class="d-block mx-auto distro-logo" alt="Fedora" style="margin-left: 100px">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="nome-distro">Fedora</h5>
+                                    <p>Fedora é uma distribuição inovadora que traz as últimas tecnologias, sendo ideal para desenvolvedores e entusiastas que buscam um sistema moderno e confiável.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Debian -->
+                        <div class="carousel-item">
+                            <a href="https://distrosea.com/pt/start/debian-12.5.0-gnome/" target="_blank">
+                                <img src="images/debian.png" class="d-block mx-auto distro-logo" alt="Debian">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="nome-distro">Debian</h5>
+                                    <p>Debian é uma distribuição estável e confiável, amplamente utilizada como base para outras distribuições, incluindo o Ubuntu. É conhecida por sua robustez e segurança.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Controles do Carrossel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#linuxCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#linuxCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+
+                <!-- Listas Ordenadas -->
+                <div class="mt-5">
+                    <h2 class="text-center mb-4">Lista de Distribuições</h2>
+                    <ol class="distro-list text-center">
+                        <li><a href="https://distrosea.com/pt/start/ubuntu-25.04-default/" target="_blank">Ubuntu - Popular e fácil de usar.</a></li>
+                        <li><a href="https://distrosea.com/pt/start/fedora-42-cinnamon/" target="_blank">Fedora - Inovadora e moderna.</a></li>
+                        <li><a href="https://distrosea.com/pt/start/debian-12.5.0-gnome/" target="_blank">Debian - Estável e confiável.</a></li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-unstyled">
+                <li><a href="index.html" class="text-decoration-none">Início</a></li>
+                <li><a href="index-catalog.html" class="text-decoration-none">Catálogo</a></li>
+                <li><a href="contact.html" class="text-decoration-none">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Arquivos JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
