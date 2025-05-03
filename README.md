@@ -91,7 +91,7 @@ Este documento descreve o processo de criação de um site estático utilizando 
    - Abra o arquivo `index.html` no navegador para verificar o funcionamento.
 
 4. **Visualização Online**  
-   - O site criado pode ser acessado através do seguinte link:  
+   - O site criado por mim para esse projeto pode ser acessado através do seguinte link:  
      [https://paulofariaslima8.github.io/Projeto-Linux-Compass/](https://paulofariaslima8.github.io/Projeto-Linux-Compass/)
 
 ---
